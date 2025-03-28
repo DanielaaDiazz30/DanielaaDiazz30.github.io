@@ -1,14 +1,14 @@
-@font-face {
-    font-family: 'GameTitleFont';
-    src: url(fonts/game-title.woff.zip)
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Rajdhani:wght@300;400;700&display=swap');
+
+h1, h2 {
+    font-family: 'Audiowide', sans-serif;
+}
+p {
+    font-family: 'Rajdhani', sans-serif;
 }
 
-@font-face {
-    font-family: 'GameBodyFont';
-    src: url('fonts/game-body.woff') format('woff');
-}
 body {
-
+    font-family: 'Rajdhani', sans-serif;
     background-color: #1a1a1a;
     color: blue;
     margin: 0;
@@ -18,7 +18,7 @@ body {
 
 h1 {
     
-    font-family: 'GameTitleFont';
+    font-family: 'Audiowide', sans-serif;
     font-size: 2.5em;
     color: yellow;
     font-weight: bold;
@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   
-    font-family: 'GameTitleFont';
+    font-family: 'Audiowide', sans-serif;
     color: yellow;
     font-weight: bold;
     text-transform: uppercase;
@@ -35,7 +35,7 @@ h2 {
 }
 
 p { 
-   
+    font-family: 'Rajdhani', sans-serif;
     font-size: 1.2em;
     line-height: 1.6;
     color: lightgray;

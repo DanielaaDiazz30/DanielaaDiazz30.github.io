@@ -28,11 +28,13 @@ table {
     margin: 20px auto;
     border-collapse: collapse;
     width: 60%;
+    border-color: yellow;
 }
 
 table, th, td {
     border: 1px solid black;
     padding: 10px;
+    border-color: yellow;
 }
 
 img {

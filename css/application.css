@@ -1,70 +1,107 @@
+/* Importing Custom Fonts */
 @font-face {
-    font-family: 'HeadingFont';
+    font-family: 'CoolHeadingFont';
     src: url('fonts/heading-font.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'BodyFont';
+    font-family: 'CoolBodyFont';
     src: url('fonts/body-font.woff2') format('woff2');
 }
 
 body {
-    font-family: 'BodyFont', sans-serif;
-    background-color: orange;
+    font-family: 'CoolBodyFont', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-h1, h2 {
-    font-family: 'HeadingFont', sans-serif;
-    color: #333;
+h1 {
+    font-family: 'CoolHeadingFont', serif;
+    font-size: 2.5em;
+    color: yellow;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-iframe {
-    border: 5px solid #333;
-    margin-top: 20px;
+h2 {
+    font-family: 'CoolHeadingFont', serif;
+    color: yellow;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
-table {
-    margin: 20px auto;
-    border-collapse: collapse;
-    width: 60%;
-    border-color: yellow;
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: lightgray;
+    margin: 10px 20px;
 }
 
-table, th, td {
-    border: 1px solid black;
-    padding: 10px;
-    border-color: yellow;
+a {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: orange;
 }
 
 img {
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 3px solid yellow;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    color: yellow;
+.iframe-container {
+    margin: 20px 0;
 }
 
-table {
-    width: 60%;
+iframe {
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+.controls-table {
+    width: 70%;
     margin: 20px auto;
     border-collapse: collapse;
-    border: 3px solid white; 
-}
-
-th, td {
-    border: 2px solid blue; /* Change table cell borders */
-    padding: 10px;
+    background: #222;
     text-align: center;
+    border: 3px solid blue; /* Blue border */
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: yellow; 
+.controls-table th {
+    background: #0056b3;
+    color: yellow; /* Yellow text */
+    padding: 15px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: 2px solid blue;
 }
 
+.controls-table td {
+    padding: 12px;
+    border: 2px solid blue;
+    color: yellow; /* Yellow text */
+    font-size: 1.1em;
+}
+
+.controls-table img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 5px;
+}
 
 
 

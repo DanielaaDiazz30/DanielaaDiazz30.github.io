@@ -41,17 +41,6 @@ p {
     margin: 10px 20px;
 }
 
-a {
-    color: cyan;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    color: orange;
-}
-
 img {
     width: 100%;
     max-width: 500px;

@@ -48,4 +48,16 @@ h1, h2, h3, h4, h5, h6 {
     color: yellow;
 }
 
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 3px solid white; 
+}
+
+th, td {
+    border: 2px solid blue; /* Change table cell borders */
+    padding: 10px;
+    text-align: center;
+}
 

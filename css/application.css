@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'GameTitleFont';
-    src: url('fonts/game-title.woff') format('woff');
+    src: url(fonts/game-title.woff)
 }
 
 @font-face {

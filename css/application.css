@@ -1,8 +1,15 @@
+@font-face {
+    font-family: 'CoolHeadingFont';
+    src: url('fonts/heading-font.woff2') format('woff2');
+}
 
+@font-face {
+    font-family: 'CoolBodyFont';
+    src: url('fonts/body-font.woff2') format('woff2');
 
 
 body {
-    font-family: 'Quattrocento', serif;
+    font-family: 'CoolHeadingFont';
     background-color: #1a1a1a;
     color: blue;
     margin: 0;
@@ -11,7 +18,7 @@ body {
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'CoolHeadingFont';
     font-size: 2.5em;
     color: yellow;
     font-weight: bold;
@@ -19,7 +26,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'CoolHeadingFont';
     color: yellow;
     font-weight: bold;
     text-transform: uppercase;
@@ -27,7 +34,7 @@ h2 {
 }
 
 p {
-    font-family: 'Oswald', sans-serif;
+    font-family:'CoolBodyFont';
     font-size: 1.2em;
     line-height: 1.6;
     color: lightgray;

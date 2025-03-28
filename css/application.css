@@ -64,14 +64,14 @@ iframe {
     border-collapse: collapse;
     background: #222;
     text-align: center;
-    border: 3px solid blue; /* Blue border */
+    border: 3px solid blue; 
     border-radius: 10px;
     overflow: hidden;
 }
 
 .controls-table th {
     background: #0056b3;
-    color: yellow; /* Yellow text */
+    color: yellow; 
     padding: 15px;
     font-size: 1.2em;
     text-transform: uppercase;
@@ -81,7 +81,7 @@ iframe {
 .controls-table td {
     padding: 12px;
     border: 2px solid blue;
-    color: yellow; /* Yellow text */
+    color: yellow; 
     font-size: 1.1em;
 }
 

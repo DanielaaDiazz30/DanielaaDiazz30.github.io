@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'GameTitleFont';
-    src: url(fonts/game-title.woff)
+    src: url(fonts/game-title.woff.zip)
 }
 
 @font-face {
@@ -18,7 +18,7 @@ body {
 
 h1 {
     
-
+    font-family: 'GameTitleFont';
     font-size: 2.5em;
     color: yellow;
     font-weight: bold;
@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   
-  
+    font-family: 'GameTitleFont';
     color: yellow;
     font-weight: bold;
     text-transform: uppercase;

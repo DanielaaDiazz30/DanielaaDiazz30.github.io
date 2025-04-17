@@ -1,23 +1,26 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #f9f9f9;
+  background-color: #fdf6f0; 
   margin: 0;
   padding: 0;
   color: #333;
 }
 
+/* Header styling */
 header {
-  background-color: #222;
-  color: white;
+  background-color: #a8dadc; 
+  color: #1d3557;
   text-align: center;
   padding: 2em 1em;
 }
 
+/* Profile image */
 .profile-img {
   width: 150px;
   border-radius: 50%;
   margin-top: 1em;
+  border: 4px solid #f6bd60; 
 }
 
 /* Navigation bar */
@@ -26,31 +29,44 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 2em;
-  background-color: #444;
+  background-color: #f6bd60; 
   padding: 1em 0;
   margin: 0;
 }
 
 nav a {
-  color: white;
+  color: #264653; 
   text-decoration: none;
   font-weight: bold;
 }
 
+/* Section styling */
 section {
   padding: 2em;
-  border-bottom: 1px solid #ccc;
+  background-color: #ffe5ec; 
+  border-bottom: 2px solid #dee2e6;
 }
 
+/* Table styling */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1em;
+  background-color: #fffaf0; 
 }
 
 th, td {
-  border: 1px solid #999;
-  padding: 0.5em;
+  border: 1px solid #ccc;
+  padding: 0.75em;
   text-align: left;
 }
+
+/* Footer styling */
+footer {
+  background-color: #cdb4db; 
+  color: #4a4e69;
+  text-align: center;
+  padding: 1em;
+}
+
 

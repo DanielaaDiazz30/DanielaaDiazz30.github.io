@@ -1,148 +1,128 @@
  {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden; 
-    font-family: Arial, sans-serif;
-    line-height: 1.4;
-    background-color: #f5f7fa; 
-    color: #333333; 
-    padding: 3vw;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  background-color: #f5f7fa;
+  color: #333333;
+  padding: 3vw;
 }
+
 header {
-    text-align: center;
-    padding: 3vw 2vw;
-    background-color: #b0d6d3; 
-    color: #003333; 
+  text-align: center;
+  padding: 3vw 2vw;
+  background-color: #b0d6d3;
+  color: #003333;
 }
+
 footer {
-    text-align: center;
-    padding: 3vw;
-    background-color: #d9e8e3; 
-    color: #333333;
-    margin-top: 5vw;
+  text-align: center;
+  padding: 3vw;
+  background-color: #d9e8e3;
+  color: #333333;
+  margin-top: 5vw;
 }
+
 h1 {
-    font-size: 6vw; 
-    margin-bottom: 3vw;
+  font-size: 5vw;
+  margin-bottom: 3vw;
 }
 
 h2 {
-    font-size: 4.5vw;
-    margin: 3vw 0 2vw 0;
+  font-size: 3.5vw;
+  margin: 3vw 0 2vw 0;
 }
 
 p {
-    font-size: 4vw;
-    margin-bottom: 3vw;
+  font-size: 2.8vw;
+  margin-bottom: 3vw;
 }
+
 .content {
-    max-width: 800px;
-    margin: auto;
+  max-width: 800px;
+  margin: auto;
 }
+
 img {
-    max-width: 100%;
-    height: auto;
-table {
-    width: 100%;
-    max-width: 100%;
-    border-collapse: collapse;
-    background-color: #ffffff;
-    margin: 4vw 0;
-    border: 2px solid #cfd8dc;
-    overflow-x: auto;
-    display: block;
-    table-layout: fixed;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-th, td {
-    font-size: 4vw;
-    padding: 2vw;
-    text-align: center;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-    width: 16.66%; 
-    border: 1px solid #cfd8dc;
-}
-
-th {
-    background-color: #b0d6d3;
-    color: #003333;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #f5f7fa; 
-}
-
-th {
-    background-color: #b0d6d3;
-    color: #003333;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 td img {
-    width: 50%;
-    height: auto;
-    max-width: 100%;
-}
-body {
-    overflow-x: hidden;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
- td img {
-    width: 40%;
-    height: auto;
-    max-width: 100%;
-    border: 2px solid #cfd8dc; /* Soft border to match theme */
-    border-radius: 6px; /* Optional: rounded corners */
-    display: block;
-    margin: 0 auto; /* Center the image within the cell */
+  width: 40%;
+  height: auto;
+  max-width: 100%;
+  border: 2px solid #cfd8dc;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
 }
 
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  margin: 4vw 0;
+  border: 2px solid #cfd8dc;
+  overflow-x: auto;
+  display: block;
+  table-layout: fixed;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+th, td {
+  font-size: 2.8vw;
+  padding: 2vw;
+  text-align: center;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  width: 16.66%;
+  border: 1px solid #cfd8dc;
+}
+
+th {
+  background-color: #b0d6d3;
+  color: #003333;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f5f7fa;
+}
+
+/* Links */
 a {
-    color: #007777; 
-    text-decoration: none;
+  color: #007777;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #005555; 
-    text-decoration: underline;
-}
-
-section, div, article, main {
-    max-width: 100%;
-    overflow-x: hidden;
+  color: #005555;
+  text-decoration: underline;
 }
 
 @media (min-width: 600px) {
-    h1 {
-        font-size: 3vw;
-    }
-    h2 {
-        font-size: 2.5vw;
-    }
-    p, th, td {
-        font-size: 2vw;
-    }
-    footer {
-        font-size: 1.8vw;
-    }
+  h1 { font-size: 3vw; }
+  h2 { font-size: 2.5vw; }
+  p, th, td { font-size: 1.8vw; }
+  footer { font-size: 1.6vw; }
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 6vw;
-    }
+@media (max-width: 599px) {
+  h1 { font-size: 5.5vw; }
+  p, th, td { font-size: 3.5vw; }
 }
+
 
 
 

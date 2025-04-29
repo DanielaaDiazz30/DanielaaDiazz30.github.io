@@ -1,4 +1,4 @@
-{
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,48 +12,48 @@ html, body {
     background-color: #f9f9f9;
     padding: 3vw;
 }
+
 header {
     text-align: center;
     padding: 3vw 2vw;
     background-color: #4CAF50;
     color: white;
 }
+
 h1 {
     font-size: 6vw; 
     margin-bottom: 3vw;
 }
-
 h2 {
-    font-size: 4.5vw; 
+    font-size: 4.5vw;
     margin: 3vw 0 2vw 0;
 }
 .content {
     max-width: 800px;
     margin: auto;
 }
-
 p {
     font-size: 4vw; 
     margin-bottom: 3vw;
 }
 
 img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
-    border-radius: 6px;
+}
+
+.superhero-img {
     display: block;
     margin: 0 auto;
-}
-.image-section {
-    text-align: center;
-    margin: 4vw 0;
+    max-width: 90%;
+    border-radius: 6px;
 }
 footer {
     text-align: center;
     padding: 3vw;
     background-color: #333;
     color: white;
-    font-size: 3.5vw; 
+    font-size: 3.5vw;
     margin-top: 5vw;
 }
 table {
@@ -67,7 +67,7 @@ table {
 }
 
 th, td {
-    font-size: 4vw; 
+    font-size: 4vw;
     padding: 2vw;
     text-align: center;
     word-break: break-word;
@@ -78,6 +78,7 @@ th {
     background-color: #4CAF50;
     color: white;
 }
+
 @media (min-width: 600px) {
     h1 {
         font-size: 3vw;
@@ -92,7 +93,6 @@ th {
         font-size: 1.8vw;
     }
 }
-
 
 
 

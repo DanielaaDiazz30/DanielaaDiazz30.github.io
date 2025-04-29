@@ -57,7 +57,7 @@ table {
     overflow-x: auto;
     display: block;
     table-layout: fixed;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 th, td {
@@ -71,24 +71,17 @@ th, td {
     border: 1px solid #cfd8dc;
 }
 
+th {
+    background-color: #b0d6d3;
+    color: #003333;
+}
+
 tbody tr:nth-child(odd) {
-    background-color: #f5f7fa;
+    background-color: #f5f7fa; 
 }
 
 th {
     background-color: #b0d6d3;
-    color: #003333;
-}
-
-
-th {
-    background-color: #b0d6d3;
-    color: #003333;
-}
-
-
-th {
-    background-color: #b0d6d3; 
     color: #003333;
 }
 
@@ -96,6 +89,23 @@ td img {
     width: 50%;
     height: auto;
     max-width: 100%;
+}
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+ td img {
+    width: 40%;
+    height: auto;
+    max-width: 100%;
+    border: 2px solid #cfd8dc; /* Soft border to match theme */
+    border-radius: 6px; /* Optional: rounded corners */
+    display: block;
+    margin: 0 auto; /* Center the image within the cell */
 }
 
 a {

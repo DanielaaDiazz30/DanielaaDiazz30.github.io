@@ -1,4 +1,4 @@
- {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 html, body {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
     font-family: Arial, sans-serif;
     line-height: 1.4;
     background-color: #f9f9f9;
@@ -22,6 +22,7 @@ h1 {
     font-size: 6vw; 
     margin-bottom: 3vw;
 }
+
 h2 {
     font-size: 4.5vw; 
     margin: 3vw 0 2vw 0;
@@ -30,14 +31,18 @@ h2 {
     max-width: 800px;
     margin: auto;
 }
+
 p {
     font-size: 4vw; 
     margin-bottom: 3vw;
 }
+
 img {
-    max-width: 90%; 
+    max-width: 90%;
     height: auto;
     border-radius: 6px;
+    display: block;
+    margin: 0 auto;
 }
 .image-section {
     text-align: center;
@@ -51,6 +56,28 @@ footer {
     font-size: 3.5vw; 
     margin-top: 5vw;
 }
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+    background-color: #fff;
+    margin: 4vw 0;
+}
+
+th, td {
+    font-size: 4vw; 
+    padding: 2vw;
+    text-align: center;
+    word-break: break-word;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
 @media (min-width: 600px) {
     h1 {
         font-size: 3vw;
@@ -58,14 +85,13 @@ footer {
     h2 {
         font-size: 2.5vw;
     }
-    p {
+    p, th, td {
         font-size: 2vw;
     }
     footer {
         font-size: 1.8vw;
     }
 }
-
 
 
 

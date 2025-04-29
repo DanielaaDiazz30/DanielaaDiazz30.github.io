@@ -47,7 +47,6 @@ p {
 img {
     max-width: 100%;
     height: auto;
-
 table {
     width: 100%;
     max-width: 100%;
@@ -58,22 +57,30 @@ table {
     overflow-x: auto;
     display: block;
     table-layout: fixed;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05); 
 }
-
 
 th, td {
     font-size: 4vw;
     padding: 2vw;
     text-align: center;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    width: 16.66%; 
     border: 1px solid #cfd8dc;
-
-    word-break: break-word;    
-    overflow-wrap: break-word;  
-    white-space: normal;        
-    width: 33.33%;              
 }
 
-/* Table Header Background */
+tbody tr:nth-child(odd) {
+    background-color: #f5f7fa;
+}
+
+th {
+    background-color: #b0d6d3;
+    color: #003333;
+}
+
+
 th {
     background-color: #b0d6d3;
     color: #003333;

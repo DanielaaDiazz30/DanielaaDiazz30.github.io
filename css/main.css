@@ -1,4 +1,4 @@
-{
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,6 +27,9 @@ footer {
   color: #333333;
   margin-top: 5vw;
 }
+h1, h2, h3, p {
+  text-align: left;
+}
 
 h1 {
   font-size: 5vw;
@@ -42,6 +45,7 @@ p {
   font-size: 3.2vw;
   margin-bottom: 3vw;
 }
+
 .content {
   max-width: 800px;
   margin: auto;
@@ -52,48 +56,45 @@ img {
   height: auto;
   display: block;
 }
-
 td img {
-  width: 40%;
+  width: 60%;
   height: auto;
   max-width: 100%;
   border: 2px solid #cfd8dc;
   border-radius: 8px;
   margin: 0 auto;
+  display: block;
 }
 table {
   width: 100%;
   max-width: 100%;
   border-collapse: collapse;
   background-color: #ffffff;
-  margin: 4vw 0;
+  margin: 4vw 0 4vw 0; /* Moved left: no auto margin */
   border: 2px solid #cfd8dc;
-  table-layout: fixed;
-  display: block;
   overflow-x: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  display: block;
+  table-layout: fixed;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 th, td {
   font-size: 3vw;
   padding: 2vw;
-  text-align: center;
+  text-align: center; /* keep content centered inside cells */
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;
   width: 16.66%;
   border: 1px solid #cfd8dc;
 }
-
 th {
   background-color: #b0d6d3;
   color: #003333;
 }
-
 tbody tr:nth-child(odd) {
   background-color: #f5f7fa;
 }
-
 a {
   color: #007777;
   text-decoration: none;
@@ -115,7 +116,6 @@ a:hover {
   h1 { font-size: 5.5vw; }
   p, th, td { font-size: 3.5vw; }
 }
-
 
 
 

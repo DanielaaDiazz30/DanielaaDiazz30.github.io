@@ -9,74 +9,91 @@ html, body {
     overflow-x: hidden; 
     font-family: Arial, sans-serif;
     line-height: 1.4;
-    background-color: #f9f9f9;
+    background-color: #f5f7fa; 
+    color: #333333; 
     padding: 3vw;
 }
 header {
     text-align: center;
     padding: 3vw 2vw;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #b0d6d3; 
+    color: #003333; 
+}
+footer {
+    text-align: center;
+    padding: 3vw;
+    background-color: #d9e8e3; 
+    color: #333333;
+    margin-top: 5vw;
 }
 h1 {
     font-size: 6vw; 
     margin-bottom: 3vw;
 }
+
 h2 {
     font-size: 4.5vw;
     margin: 3vw 0 2vw 0;
+}
+
+p {
+    font-size: 4vw;
+    margin-bottom: 3vw;
 }
 .content {
     max-width: 800px;
     margin: auto;
 }
-p {
-    font-size: 4vw; 
-    margin-bottom: 3vw;
-}
 img {
     max-width: 100%;
     height: auto;
- td img {
-    width: 50%;
-    height: auto;
-    max-width: 100%;
-}
-footer {
-    text-align: center;
-    padding: 3vw;
-    background-color: #333;
-    color: white;
-    font-size: 3.5vw;
-    margin-top: 5vw;
 }
 table {
     width: 100%;
     max-width: 100%;
     border-collapse: collapse;
-    overflow-x: auto;
-    display: block; 
-    background-color: #fff;
+    background-color: #ffffff; 
     margin: 4vw 0;
+    border: 2px solid #cfd8dc; 
+    overflow-x: auto;
+    display: block; /
 }
+
 th, td {
     font-size: 4vw;
     padding: 2vw;
     text-align: center;
-    word-break: break-word;
-    border: 1px solid #ddd;
+    word-break: break-word; 
+    overflow-wrap: break-word;
+    border: 1px solid #cfd8dc;
 }
+
 th {
-    background-color: #4CAF50;
-    color: white;
- section, div, article, main {
+    background-color: #b0d6d3; 
+    color: #003333;
+}
+
+td img {
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    color: #007777; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005555; 
+    text-decoration: underline;
+}
+
+section, div, article, main {
     max-width: 100%;
     overflow-x: hidden;
 }
-td, th {
-    word-break: break-word;
-    overflow-wrap: break-word;
-}
+
 @media (min-width: 600px) {
     h1 {
         font-size: 3vw;
@@ -92,6 +109,11 @@ td, th {
     }
 }
 
+@media (max-width: 600px) {
+    h1 {
+        font-size: 6vw;
+    }
+}
 
 
 

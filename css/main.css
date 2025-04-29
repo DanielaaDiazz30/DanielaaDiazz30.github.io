@@ -69,6 +69,10 @@ th, td {
 th {
     background-color: #4CAF50;
     color: white;
+ section, div, article, main {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 }
 @media (min-width: 600px) {
     h1 {

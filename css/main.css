@@ -1,15 +1,17 @@
-
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    padding: 2vw;
     background-color: #f9f9f9;
+    padding: 2vw;
 }
 
 header {
@@ -18,9 +20,9 @@ header {
     background-color: #4CAF50;
     color: white;
 }
-
 h1 {
     font-size: 8vw;
+    margin-bottom: 4vw;
 }
 
 h2 {
@@ -37,18 +39,15 @@ p {
     font-size: 5vw;
     margin-bottom: 4vw;
 }
-
-.image-section {
-    text-align: center;
-    margin: 6vw 0;
-}
-
-.image-section img {
+img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
-
+.image-section {
+    text-align: center;
+    margin: 6vw 0;
+}
 footer {
     text-align: center;
     padding: 3vw;
@@ -57,7 +56,6 @@ footer {
     font-size: 4vw;
     margin-top: 6vw;
 }
-
 @media (min-width: 600px) {
     h1 {
         font-size: 4vw;
@@ -72,6 +70,7 @@ footer {
         font-size: 2vw;
     }
 }
+
 
 
 

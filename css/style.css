@@ -23,11 +23,12 @@ body {
   padding: 1.5rem 2rem;
   text-align: center;
 }
-
-.logo {
-  font-size: 2rem;
+ .logo {
+  font-size: 2.8rem;  
   color: #fff;
   margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 nav ul {

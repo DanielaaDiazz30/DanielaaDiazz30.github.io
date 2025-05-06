@@ -222,6 +222,17 @@ form button:hover {
     flex-direction: column;
     align-items: center;
   }
+.real-image img {
+  max-width: 100%;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin: 2rem 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
   .placeholder-image {
     font-size: 0.95rem;

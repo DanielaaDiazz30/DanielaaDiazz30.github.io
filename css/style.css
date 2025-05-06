@@ -252,4 +252,24 @@ form button:hover {
   display: block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.circle i.icon {
+  font-size: 2rem;
+  color: #7AC943;
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.circle:hover i.icon {
+  transform: scale(1.2);
+}
+
+.circle {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
 

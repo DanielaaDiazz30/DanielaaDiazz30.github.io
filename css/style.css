@@ -4,43 +4,47 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
   color: #333;
   line-height: 1.6;
 }
-.header-banner {
-  background-color: #7AC943;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
 }
 
-.logo h1 {
-  font-size: 2rem;
+.header {
+  background-color: #7AC943;
   color: white;
+}
+
+.header .logo {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
+  justify-content: center;
+  padding-bottom: 1rem;
 }
 
 nav a {
-  text-decoration: none;
-  font-weight: bold;
   color: #4D4D4F;
-  padding: 0.6rem 1.2rem;
+  background: white;
   border: 2px solid #7AC943;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  background-color: #ffffff;
-  transition: all 0.3s ease;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 nav a:hover {
@@ -48,149 +52,109 @@ nav a:hover {
   color: white;
 }
 
-.hero-section {
+.hero {
   background-color: #f4f4f4;
-  padding: 5rem 2rem;
   text-align: center;
+  padding: 4rem 2rem;
 }
 
-.hero-section h2 {
-  font-size: 2.5rem;
+.hero h2 {
+  font-size: 2.2rem;
   margin-bottom: 1rem;
-  color: #333;
 }
 
-.hero-section p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
-.cta-button {
+.btn {
   background-color: #7AC943;
   color: white;
   padding: 0.75rem 1.5rem;
-  font-size: 1rem;
   border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.btn:hover {
   background-color: #4a8124;
 }
 
-.visual-block {
-  background-color: #eaeaea;
-  padding: 3rem 2rem;
+.features {
+  background-color: #ffffff;
   text-align: center;
+  padding: 4rem 2rem;
 }
 
-.placeholder-box {
-  background-color: #dcdcdc;
-  height: 250px;
+.card-grid {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
-  align-items: center;
-  font-style: italic;
-  color: #555;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #f4f4f4;
   border-radius: 8px;
-  border: 2px dashed #b0b0b0;
-  margin: 0 auto;
-  max-width: 600px;
-}
-
-.placeholder-box.small {
-  height: 200px;
-  max-width: 350px;
-}
-
-.split-section {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 4rem 2rem;
-  align-items: center;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.split-section.reverse {
-  flex-direction: row-reverse;
-}
-
-.split-section .text-content {
-  max-width: 500px;
-}
-
-.split-section h2 {
-  color: #4D4D4F;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.split-section ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-.impact-stats {
-  background-color: #f4f4f4;
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.impact-stats h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.stats-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.stat-box {
-  background-color: white;
   padding: 2rem;
-  width: 200px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.stats {
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.stat-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat {
+  background: white;
+  padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  width: 220px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-.stat-box:hover {
-  transform: scale(1.05);
-}
-
-.stat-box h3 {
+.stat h3 {
   font-size: 2rem;
   color: #7AC943;
 }
 
-.stat-box p {
-  font-size: 1rem;
-  color: #555;
+.placeholder-image {
+  height: 250px;
+  background-color: #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-style: italic;
 }
-footer {
+
+.footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 1.5rem;
-  font-size: 0.9rem;
   margin-top: 2rem;
 }
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
-    gap: 0.5rem;
   }
 
-  .split-section {
+  .card-grid, .stat-grid {
     flex-direction: column;
-  }
-
-  .placeholder-box, .placeholder-box.small {
-    width: 90%;
+    align-items: center;
   }
 }
 

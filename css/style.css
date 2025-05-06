@@ -237,6 +237,11 @@ form button:hover {
     padding: 0 1rem;
   }
 }
+.hero,
+.placeholder-image,
+.stats {
+  background-color: white;
+}
 
 .real-image img {
   width: 100%;

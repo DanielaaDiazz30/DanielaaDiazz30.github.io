@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: light-yellow;
+  background-color: #ffffff;
   color: #333;
   line-height: 1.6;
 }
@@ -87,6 +87,7 @@ nav a:hover {
 .btn:hover {
   background-color: #4a8124;
 }
+
 .placeholder-image {
   background-color: #e0e0e0;
   padding: 3rem 2rem;
@@ -94,6 +95,7 @@ nav a:hover {
   color: #444;
   font-style: italic;
 }
+
 .card-grid {
   display: flex;
   flex-wrap: wrap;
@@ -163,6 +165,8 @@ nav a:hover {
   color: #7AC943;
   font-weight: bold;
 }
+
+/* CTA Footer */
 .cta-footer {
   background-color: #7AC943;
   text-align: center;
@@ -174,6 +178,7 @@ nav a:hover {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
+
 
 form {
   max-width: 500px;
@@ -204,6 +209,7 @@ form button {
 form button:hover {
   background-color: #4a8124;
 }
+
 .footer {
   background-color: #1a1a1a;
   color: white;
@@ -211,6 +217,8 @@ form button:hover {
   padding: 1.5rem;
   font-size: 0.9rem;
   margin-top: 2rem;
+}
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -225,16 +233,19 @@ form button:hover {
   .placeholder-image {
     font-size: 0.95rem;
   }
+
+  .real-image img {
+    padding: 0 1rem;
+  }
 }
+
 .real-image img {
-  max-width: 100%;
-  width: 90%;
+  width: 100%;
+  max-width: 600px;
   height: auto;
   border-radius: 10px;
   margin: 2rem auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
 

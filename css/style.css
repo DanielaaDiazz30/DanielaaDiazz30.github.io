@@ -4,12 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: lightyellow;
-}
+
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
+  background-color: #light-yellow;
   color: #333;
   line-height: 1.6;
 }

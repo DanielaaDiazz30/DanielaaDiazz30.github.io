@@ -16,25 +16,27 @@ body {
   max-width: 1100px;
   margin: auto;
   padding: 2rem;
+  text-align: center;
 }
 
 .header {
   background-color: #7AC943;
-  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
 }
 
-.header .logo {
+.logo {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
   justify-content: center;
-  padding-bottom: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -44,28 +46,30 @@ nav a {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
-  transition: 0.3s;
+  font-weight: bold;
+  transition: 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #5ea132;
+  background-color: #4a8124;
   color: white;
 }
 
 .hero {
   background-color: #f4f4f4;
-  text-align: center;
   padding: 4rem 2rem;
 }
 
 .hero h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #222;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
 }
 
 .btn {
@@ -74,37 +78,50 @@ nav a:hover {
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   background-color: #4a8124;
 }
-
-.features {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 4rem 2rem;
+.placeholder-image {
+  background-color: #e0e0e0;
+  padding: 3rem 2rem;
+  margin-top: 1rem;
+  color: #444;
+  font-style: italic;
 }
-
 .card-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
-  margin-top: 2rem;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
 .card {
-  background: #f4f4f4;
+  background: #f9f9f9;
   border-radius: 8px;
   padding: 2rem;
   width: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
 .stats {
-  background-color: #eaeaea;
-  text-align: center;
+  background-color: #f4f4f4;
   padding: 4rem 2rem;
 }
 
@@ -113,7 +130,6 @@ nav a:hover {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 2rem;
 }
 
 .stat {
@@ -128,33 +144,88 @@ nav a:hover {
   font-size: 2rem;
   color: #7AC943;
 }
-
-.placeholder-image {
-  height: 250px;
-  background-color: #dcdcdc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
+.testimonial {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  text-align: center;
   font-style: italic;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 
+.testimonial blockquote {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.testimonial .author {
+  color: #7AC943;
+  font-weight: bold;
+}
+.cta-footer {
+  background-color: #7AC943;
+  text-align: center;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.cta-footer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #7AC943;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #4a8124;
+}
 .footer {
-  background-color: #333;
+  background-color: #1a1a1a;
   color: white;
   text-align: center;
   padding: 1.5rem;
+  font-size: 0.9rem;
   margin-top: 2rem;
 }
-
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
   }
 
-  .card-grid, .stat-grid {
+  .card-grid,
+  .stat-grid {
     flex-direction: column;
     align-items: center;
   }
+
+  .placeholder-image {
+    font-size: 0.95rem;
+  }
 }
+
 

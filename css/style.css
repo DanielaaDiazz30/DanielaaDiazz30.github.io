@@ -7,34 +7,44 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
   color: #333;
-  background-color: #fff;
+  background-color: #ffffff;
+  line-height: 1.6;
 }
-
 header {
-  background-color: #7AC943; 
-  color: white;
+  background-color: #7AC943;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
+  margin-bottom: 1rem;
 }
-
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 nav a {
-  color: white;
   text-decoration: none;
   font-weight: bold;
+  color: #4D4D4F;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #7AC943;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #7AC943;
+  color: #fff;
 }
 
 .hero {
@@ -44,14 +54,15 @@ nav a {
 }
 
 .hero h1 {
-  color: #4D4D4F;
   font-size: 2.5rem;
+  color: #333;
   margin-bottom: 1rem;
 }
 
 .hero p {
   max-width: 600px;
   margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
 }
 
 .cta-button {
@@ -62,10 +73,63 @@ nav a {
   text-decoration: none;
   font-size: 1rem;
   border-radius: 4px;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
   background-color: #65a836;
+}
+
+.features, .community, .contact-info, .contact-form {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.features h2, .community h2, .contact-info h2, .contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4D4D4F;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.features li {
+  padding: 0.5rem;
+  font-weight: 500;
+  border-bottom: 1px solid #ccc;
+}
+
+input, textarea {
+  width: 80%;
+  max-width: 400px;
+  margin: 0.5rem auto;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #7AC943;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #5ea132;
 }
 
 footer {
@@ -76,14 +140,19 @@ footer {
   font-size: 0.9rem;
   margin-top: 2rem;
 }
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
 
+@media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  input, textarea {
+    width: 90%;
   }
 }
 

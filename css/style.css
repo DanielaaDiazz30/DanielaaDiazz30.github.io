@@ -4,14 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #333;
   background-color: #ffffff;
+  color: #333;
   line-height: 1.6;
 }
-header {
+.header-banner {
   background-color: #7AC943;
   padding: 1rem 2rem;
   display: flex;
@@ -19,16 +18,18 @@ header {
   align-items: center;
 }
 
-.logo img {
-  height: 60px;
-  margin-bottom: 1rem;
+.logo h1 {
+  font-size: 2rem;
+  color: white;
 }
+
 nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 nav a {
@@ -39,119 +40,156 @@ nav a {
   border: 2px solid #7AC943;
   border-radius: 5px;
   background-color: #ffffff;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #7AC943;
-  color: #fff;
+  background-color: #5ea132;
+  color: white;
 }
 
-.hero {
-  text-align: center;
-  padding: 4rem 2rem;
+.hero-section {
   background-color: #f4f4f4;
+  padding: 5rem 2rem;
+  text-align: center;
 }
 
-.hero h1 {
+.hero-section h2 {
   font-size: 2.5rem;
-  color: #333;
   margin-bottom: 1rem;
+  color: #333;
 }
 
-.hero p {
-  max-width: 600px;
-  margin: 0 auto 1.5rem;
-  font-size: 1.1rem;
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .cta-button {
   background-color: #7AC943;
   color: white;
   padding: 0.75rem 1.5rem;
-  border: none;
-  text-decoration: none;
   font-size: 1rem;
-  border-radius: 4px;
-  display: inline-block;
-  margin-top: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #65a836;
+  background-color: #4a8124;
 }
 
-.features, .community, .contact-info, .contact-form {
-  padding: 3rem 1.5rem;
+.visual-block {
+  background-color: #eaeaea;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
-.features h2, .community h2, .contact-info h2, .contact-form h2 {
+.placeholder-box {
+  background-color: #dcdcdc;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  color: #555;
+  border-radius: 8px;
+  border: 2px dashed #b0b0b0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.placeholder-box.small {
+  height: 200px;
+  max-width: 350px;
+}
+
+.split-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.split-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.split-section .text-content {
+  max-width: 500px;
+}
+
+.split-section h2 {
+  color: #4D4D4F;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #4D4D4F;
 }
 
-.features ul {
-  list-style: none;
-  padding: 0;
-  max-width: 500px;
-  margin: 0 auto;
+.split-section ul {
+  list-style: disc;
+  padding-left: 1.5rem;
 }
-
-.features li {
-  padding: 0.5rem;
-  font-weight: 500;
-  border-bottom: 1px solid #ccc;
-}
-
-input, textarea {
-  width: 80%;
-  max-width: 400px;
-  margin: 0.5rem auto;
-  padding: 0.6rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  display: block;
-  font-size: 1rem;
-}
-
-button[type="submit"] {
-  background-color: #7AC943;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-  background-color: #5ea132;
-}
-
-footer {
+.impact-stats {
+  background-color: #f4f4f4;
+  padding: 4rem 2rem;
   text-align: center;
-  padding: 1rem;
+}
+
+.impact-stats h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.stat-box {
+  background-color: white;
+  padding: 2rem;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: scale(1.05);
+}
+
+.stat-box h3 {
+  font-size: 2rem;
+  color: #7AC943;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  color: #555;
+}
+footer {
   background-color: #333;
   color: white;
+  text-align: center;
+  padding: 1.5rem;
   font-size: 0.9rem;
   margin-top: 2rem;
 }
-
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
   nav ul {
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  input, textarea {
+  .split-section {
+    flex-direction: column;
+  }
+
+  .placeholder-box, .placeholder-box.small {
     width: 90%;
   }
 }

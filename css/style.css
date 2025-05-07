@@ -30,6 +30,10 @@ body {
   color: #7AC943;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
   font-family: 'Open Sans', sans-serif;
+  .fiber {
+  color: #1a1a1a;
+  font-weight: 700;
+}
 }
 nav ul {
   list-style: none;

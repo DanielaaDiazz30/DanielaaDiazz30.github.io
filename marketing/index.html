@@ -6,9 +6,21 @@
   <title>ALLO Fiber | Built for the Future</title>
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
-
   <header class="header">
     <div class="container">
       <h1 class="logo">ALLO <span class="fiber">Fiber</span></h1>
@@ -33,8 +45,9 @@
   </section>
 
   <section class="real-image">
-  <img src="../images/allologo.jpeg" alt="ALLO Logo Photo">
-</section>
+    <h2 class="visually-hidden">ALLO Logo</h2>
+    <img src="../images/allologo.jpeg" alt="ALLO Logo Photo">
+  </section>
 
   <section class="features">
     <div class="container">
@@ -95,6 +108,7 @@
 
   <section class="testimonial">
     <div class="container">
+      <h2 class="visually-hidden">Customer Testimonial</h2>
       <blockquote>
         “ALLO made everything faster — from gaming to video calls. Their local support is unmatched.”
       </blockquote>
@@ -103,18 +117,22 @@
   </section>
 
   <section class="real-image">
-  <div class="container">
-    <img src="../images/allo-map.jpeg" alt="ALLO Coverage Map">
-  </div>
-</section>
+    <div class="container">
+      <h2 class="visually-hidden">ALLO Coverage Map</h2>
+      <img src="../images/allo-map.jpeg" alt="ALLO Coverage Map">
+    </div>
+  </section>
+
   <section class="cta-footer">
     <div class="container">
       <h2>Ready to Experience ALLO?</h2>
       <a href="https://www.allocommunications.com/" class="btn" target="_blank">Sign Up Now</a>
     </div>
   </section>
+
   <footer class="footer">
     <p>&copy; 2025 ALLO Fiber | Built for educational purposes</p>
   </footer>
+
 </body>
 </html>

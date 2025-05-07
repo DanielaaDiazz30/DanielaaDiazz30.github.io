@@ -24,12 +24,13 @@ body {
   text-align: center;
 }
 .logo {
-  font-size: 3rem;
-  color: #fff;
-  font-weight: 800;
+  font-size: 3.5rem;
+  font-weight: 900;
   letter-spacing: 1px;
+  color: #7AC943;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  font-family: 'Open Sans', sans-serif;
 }
-
 nav ul {
   list-style: none;
   display: flex;

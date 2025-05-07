@@ -344,6 +344,56 @@ form button:hover {
   color: #7AC943;
   margin-bottom: 1rem;
 }
+.careers-banner {
+  background-color: #e6f4ec;
+  text-align: center;
+  padding: 3rem 2rem;
+}
 
+.career-hero-img {
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.careers-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.careers-banner p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.benefits {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background-color: #f9f9f9;
+  border-left: 5px solid #7AC943;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-card h3 {
+  color: #0073e6;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
 
 
